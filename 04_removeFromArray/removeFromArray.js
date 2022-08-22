@@ -7,8 +7,12 @@ const removeFromArray = function(firstArray, ...toRemove)
 	while (i < toRemove.length) 
 	{
         index = firstArray.indexOf(toRemove[i]);
-        if (index === -1) continue;
-        firstArray.splice(index, 1);
+        if (index === -1)
+		{
+			firstArray;
+		}
+        else
+			firstArray.splice(index, 1);
 		i++;
 	 }
     return firstArray;
